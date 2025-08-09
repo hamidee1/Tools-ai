@@ -1,0 +1,47 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[lang="ar"] body {
+  font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+html[lang="en"] body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Hero Section Background */
+#hero-section {
+  background-image: url('https://raw.githubusercontent.com/animated-A/backgrounds/main/pro-bg.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Category Header on Main Page */
+.category-header {
+    @apply text-3xl font-extrabold text-text-main mb-6 pb-2 border-b-2 border-primary/20;
+}
+
+/* Rank Badge on the card */
+.rank-badge {
+    @apply absolute -left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-primary text-white font-bold text-lg rounded-full flex items-center justify-center shadow-md border-2 border-card;
+}
+
+/* Glassmorphism effect for pros/cons cards */
+.glass-card {
+  @apply bg-card/60 p-6 rounded-xl border border-gray-700/50 backdrop-blur-sm;
+}
+
+/* ADDED: Styles for the new category navigation buttons */
+.category-nav-btn {
+    @apply px-4 py-2 rounded-full border-2 border-gray-700 bg-card text-text-muted font-semibold transition-all duration-200 whitespace-nowrap;
+}
+
+.category-nav-btn:hover {
+    @apply bg-primary border-primary text-white;
+}
+
+.category-nav-btn:active {
+    @apply transform scale-95;
+}
